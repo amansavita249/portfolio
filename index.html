@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#000;color:#fff}
+
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 60px;background:#000;position:sticky;top:0}
+nav h2{color:#22c55e}
+nav a{color:#ccc;margin-left:25px;text-decoration:none}
+nav a:hover{color:#22c55e}
+.nav-btn{background:#22c55e;color:#000;padding:10px 18px;border-radius:20px}
+
+.hero{display:flex;align-items:center;justify-content:space-between;padding:80px 60px;min-height:90vh}
+.hero-text{max-width:600px}
+.hero-text h1{font-size:4rem}
+.hero-text span{color:#22c55e}
+.hero-text p{color:#aaa;margin:20px 0}
+
+.btn{background:#22c55e;color:#000;padding:12px 22px;border-radius:25px;text-decoration:none}
+
+.hero-img img{width:320px;border-radius:20px;filter:grayscale(100%)}
+
+.stats{display:flex;justify-content:space-around;padding:30px;border-top:1px solid #222}
+.stat{text-align:center}
+.stat h3{color:#22c55e}
+
+.about{display:flex;align-items:center;justify-content:space-between;padding:80px 60px;gap:40px}
+.about-text{max-width:600px}
+.about-text p{color:#aaa;margin:15px 0}
+.about-img img{width:280px;border-radius:20px}
+
+.projects{padding:60px}
+.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#111;padding:20px;border-radius:15px;transition:0.3s}
+.card:hover{transform:translateY(-10px);box-shadow:0 0 20px rgba(34,197,94,0.5)}
+
+.contact{padding:60px;text-align:center}
+input,textarea{width:100%;max-width:400px;margin:10px auto;display:block;padding:10px;border-radius:8px;border:none}
+
+footer{text-align:center;padding:20px;color:#666}
+
+.hidden{opacity:0;transform:translateY(40px);transition:0.8s}
+.show{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<nav>
+ <h2>Aman Savita</h2>
+ <div>
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+  <a class="nav-btn" href="#">Download CV</a>
+ </div>
+</nav>
+
+<section class="hero hidden">
+ <div class="hero-text">
+  <p style="color:#22c55e">FRESHER WEB DEVELOPER</p>
+  <h1>Aman <br><span>Savita</span></h1>
+  <p>I am a passionate fresher skilled in HTML, CSS, and JavaScript. I love building modern and responsive websites. I also have a strong interest in cybersecurity and enjoy learning how systems work, identifying vulnerabilities, and improving security. I am continuously expanding my knowledge in both web development and ethical cybersecurity practices.</p>
+  <a href="#contact" class="btn">Hire Me</a>
+ </div>
+
+ <div class="hero-img">
+  <img src="https://via.placeholder.com/320x420" alt="profile">
+ </div>
+</section>
+
+<div class="stats hidden">
+ <div class="stat"><h3>5+</h3><p>Projects</p></div>
+ <div class="stat"><h3>Fresher</h3><p>Experience</p></div>
+ <div class="stat"><h3>100%</h3><p>Learning Attitude</p></div>
+ <div class="stat"><h3>Available</h3><p>For Work</p></div>
+</div>
+
+<section id="about" class="about hidden">
+ <div class="about-text">
+  <h2>About Me</h2>
+  <p>I am a fresher currently learning web development and building projects to improve my skills.</p>
+  <p><strong>Education:</strong> Pursuing Graduation (Add your college)</p>
+  <p><strong>Skills:</strong> HTML, CSS, JavaScript, React (basic)</p>
+  <p><strong>Cybersecurity:</strong> Basic knowledge of cybersecurity concepts such as network security, ethical hacking fundamentals, and vulnerability awareness. I also work with Kali Linux for learning penetration testing tools and practicing ethical security techniques in a controlled environment.</p>
+ </div>
+
+ <div class="about-img">
+  <img src="https://via.placeholder.com/280x330">
+ </div>
+</section>
+
+<section id="projects" class="projects hidden">
+ <h2 style="text-align:center;margin-bottom:30px">Projects</h2>
+ <div class="project-grid">
+  <div class="card">
+    <h3>Portfolio Website</h3>
+    <p>Personal portfolio built using HTML, CSS, JS</p>
+  </div>
+  <div class="card">
+    <h3>College Chatbot</h3>
+    <p>AI chatbot for answering college queries</p>
+  </div>
+  <div class="card">
+    <h3>Landing Page</h3>
+    <p>Responsive business landing page</p>
+  </div>
+ </div>
+</section>
+
+<!-- Certifications -->
+<section class="projects hidden">
+ <h2 style="text-align:center;margin-bottom:30px">My Certifications</h2>
+ <div class="project-grid">
+  <div class="card"><h3>Deloitte</h3><p>Data Analytics Job Simulation</p></div>
+  <div class="card"><h3>Udemy</h3><p>Machine Learning for Beginners</p></div>
+  <div class="card"><h3>Microsoft</h3><p>Computer Vision with Azure</p></div>
+  <div class="card"><h3>Infosys</h3><p>Introduction to Data Science</p></div>
+  <div class="card"><h3>TATA</h3><p>Cybersecurity Analyst Simulation</p></div>
+  <div class="card"><h3>Google</h3><p>AI Powered Ads</p></div>
+ </div>
+</section>
+
+<!-- Skills -->
+<section class="projects hidden">
+ <h2 style="text-align:center;margin-bottom:30px">My Skills</h2>
+ <div class="project-grid">
+  <div class="card">HTML5</div>
+  <div class="card">CSS3</div>
+  <div class="card">JavaScript</div>
+  <div class="card">Bootstrap</div>
+  <div class="card">C++</div>
+  <div class="card">Python</div>
+  <div class="card">Git & GitHub</div>
+  <div class="card">UI/UX Basics</div>
+ </div>
+</section>
+
+<section id="contact" class="contact hidden">
+ <h2>Contact Me</h2>
+ <p>Email: <a href="mailto:your@email.com" style="color:#22c55e">your@email.com</a></p>
+
+ <form onsubmit="handleSubmit(event)">
+  <input type="text" placeholder="Your Name" required>
+  <input type="email" placeholder="Your Email" required>
+  <textarea rows="4" placeholder="Message" required></textarea>
+  <button class="btn">Send</button>
+ </form>
+</section>
+
+<footer class="hidden">© 2026 Aman Savita | Fresher Portfolio</footer>
+
+<script>
+function handleSubmit(e){e.preventDefault();alert('Message sent!')}
+
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(entry=>{
+  if(entry.isIntersecting){entry.target.classList.add('show')}
+ })
+})
+
+document.querySelectorAll('.hidden').forEach(el=>observer.observe(el))
+</script>
+
+</body>
+</html>
